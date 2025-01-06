@@ -13,13 +13,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Button from "../Button/Button";
 
 function Hero() {
   const HeroData = [
     {
       id: 1,
       img: Image1,
-      subtitle: "Beats, solow",
+      subtitle: "Beats Solo",
       title: "Wireless",
       title2: "HeadPhone",
       description: "The best headphone exist in the entire universe",
@@ -27,7 +28,7 @@ function Hero() {
     {
       id: 2,
       img: Image2,
-      subtitle: "Beats, solo",
+      subtitle: "Beats Solo",
       title: "Wireless",
       title2: "Virtual",
       description: "The best VR headset exist in the entire universe",
@@ -35,7 +36,7 @@ function Hero() {
     {
       id: 1,
       img: Image3,
-      subtitle: "Beats, solo",
+      subtitle: "Beats Solo",
       title: "Beats",
       title2: "HeadPhone",
       description: "The best headphone exist in the entire universe",
@@ -52,7 +53,7 @@ function Hero() {
     speed: 500,
   };
   return (
-    <div className="container text-center">
+    <div className="container">
       <div
         className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color
       flex justify-center items-center"
@@ -70,24 +71,28 @@ function Hero() {
             // onSlideChange={() => console.log("slide change")}
           >
             {HeroData?.map((data, index) => (
-              <div key={index}>
+              <div key={data.id}>
                 <SwiperSlide>
                   <div>
                     <div className="grid grid-cols-1 sm:grid-cols-2">
                       <div className="flex flex-col justify-center gap-4 pl-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
-                        <h1>{data.subtitle}</h1>
-                        <h1>{data.title}</h1>
-                        <h1>{data.title2}</h1>
-                        <div>
-                          <button>Shop Now</button>
+                        <h1 className="text-2xl text-black dark:text-white sm:text-4xl font-bold">{data.subtitle}</h1>
+                        <h1 className="text-5xl sm:text-6xl lg:text-7xl text-black font-bold dark:text-white">{data.title}</h1>
+                        <h1 className="text-5xl font-bold sm:text-[80px] md:text-[100px] xl:text-[110px] text-white dark:text-white/5">{data.title2}</h1>
+                        <div className=""> 
+                          <Button   
+                          text={"Shop By Category"}
+                          bgColor={"bg-red-700"}
+                          textColor={"text-white"}
+                          />
                         </div>
                       </div>
-                      <div>
+                      <div className="order-1 sm:order-2">
                         <div>
                           <img
                             src={data.img}
                             alt=""
-                            className="w-[300px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop"
+                            className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"
                           />
                         </div>
                       </div>
