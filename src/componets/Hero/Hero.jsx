@@ -78,7 +78,7 @@ function Hero() {
                       <div className="flex flex-col justify-center gap-4 pl-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
                         <h1 className="text-2xl text-black dark:text-white sm:text-4xl font-bold">{data.subtitle}</h1>
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl text-black font-bold dark:text-white">{data.title}</h1>
-                        <h1 className="text-5xl font-bold sm:text-[80px] md:text-[100px] xl:text-[110px] text-white dark:text-white/5">{data.title2}</h1>
+                        <h1 className="text-5xl uppercase font-bold sm:text-[80px] md:text-[100px] xl:text-[126px] text-white dark:text-white/5">{data.title2}</h1>
                         <div className=""> 
                           <Button   
                           text={"Shop By Category"}

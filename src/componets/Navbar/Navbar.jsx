@@ -5,7 +5,7 @@ import Darkmode from "./Darkmode";
 
 function Navbar() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 dark:text-white relative duration-300 z-40">
+    <div className="bg-gray-50 dark:bg-gray-800 dark:text-white  duration-300 z-50 sticky top-0">
       <div className="py-4">
         <nav className="flex items-center justify-around gap-4">
           <div className="logo">
