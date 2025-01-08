@@ -7,7 +7,8 @@ import Image2 from "../../assets/images/vr-4ibBMPK9.png";
 import Image3 from "../../assets/images/macbook-MZGIbM5F.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Import Swiper style
 import "swiper/css";
 import "swiper/css/navigation";
@@ -76,9 +77,17 @@ function Hero() {
                   <div>
                     <div className="grid grid-cols-1 sm:grid-cols-2">
                       <div className="flex flex-col justify-center gap-4 pl-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
-                        <h1 className="text-2xl text-black dark:text-white sm:text-4xl font-bold">{data.subtitle}</h1>
+                        <h1 
+                        data-aos="zoom-out"
+                        data-aos-duration="500"
+                        data-aos-once="true"
+                        className="text-2xl text-black dark:text-white  sm:text-4xl font-bold">{data.subtitle}</h1>
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl text-black font-bold dark:text-white">{data.title}</h1>
-                        <h1 className="text-5xl uppercase font-bold sm:text-[80px] md:text-[100px] xl:text-[126px] text-white dark:text-white/5">{data.title2}</h1>
+                        <h1 
+                        data-aos="zoom-out"
+                        data-aos-duration="500"
+                        data-aos-once="true" 
+                        className="text-5xl uppercase font-bold sm:text-[80px] md:text-[100px] xl:text-[126px] text-white dark:text-white/5">{data.title2}</h1>
                         <div className=""> 
                           <Button   
                           text={"Shop By Category"}
@@ -88,7 +97,12 @@ function Hero() {
                         </div>
                       </div>
                       <div className="order-1 sm:order-2">
-                        <div>
+                        <div
+                         
+                         data-aos="zoom-in"
+                         data-aos-duration="500"
+                         data-aos-once="false"
+                        >
                           <img
                             src={data.img}
                             alt=""
