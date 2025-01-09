@@ -18,7 +18,11 @@ const Category = () => {
                             <div className="mb-4">
                                 <p className="mb-[2px]  text-gray-400">Enjoy</p>
                                 <p className="text-white mb-[2px] text-2xl font-semibold">With</p>
-                                <p className="text-white text-4xl mb-2 font-semibold opacity-20  xl:text-5xl">Earphones</p>
+                                <p 
+                                data-aos="fade-right"
+                                data-aos-duration="500"
+                                data-aos-once="true"
+                                className="text-white text-4xl mb-2 font-semibold opacity-20  xl:text-5xl">Earphones</p>
                                 <Button 
                                 text="Shop Now"
                                 textColor={"text-white"}
@@ -37,7 +41,9 @@ const Category = () => {
                             <div className="mb-4">
                                 <p className="mb-[2px]  text-white">Enjoy</p>
                                 <p className="text-white mb-[2px] text-2xl font-semibold">With</p>
-                                <p className="text-white text-4xl mb-2 font-bold opacity-30  xl:text-5xl">Gadget</p>
+                                <p   data-aos="fade-right"
+                                data-aos-duration="500"
+                                data-aos-once="true" className="text-white text-4xl mb-2 font-bold opacity-30  xl:text-5xl">Gadget</p>
                                 <Button 
                                 text="Shop Now"
                                 textColor={"text-brandYellow"}

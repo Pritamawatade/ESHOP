@@ -2,28 +2,34 @@ import React from "react";
 import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import { IoMdSearch } from "react-icons/io";
 import Darkmode from "./Darkmode";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 dark:text-white  duration-300 z-50 sticky top-0">
-      <div className="py-4">
-        <nav className="flex items-center justify-around gap-4">
-          <div className="logo">
-            <a
-              href="#"
-              className="text-2xl text-red-600 tracking-widest font-semibold sm:text-3xl"
-            >
+    <div className="sticky bg-gray-50 dark:bg-gray-800 top-0 shadow-md">
+      <div className="bg-gray-50 dark:bg-gray-800 dark:text-white  duration-300 ">
+        <div className="py-4">
+          <nav className="flex items-center justify-around gap-4">
+            <div className="logo">
+              <a
+                href="#"
+                className="text-2xl text-red-600 tracking-widest font-semibold sm:text-3xl"
+              >
               ESHOP
             </a>
           </div>
           <div className="hidden lg:block">
             <ul className="links flex items-center gap-3">
-              <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
-                Home
-              </li>
-              <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
-                About
-              </li>
+            <Link to="/">
+                <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
+                  Home
+                </li>
+             </Link>
+             <Link to="/about">
+                <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
+                  About
+                </li>
+             </Link>
               <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
                 Contact
               </li>
@@ -73,6 +79,7 @@ function Navbar() {
           </div>
         </nav>
       </div>
+    </div>
     </div>
   );
 }

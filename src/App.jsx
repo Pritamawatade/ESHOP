@@ -45,9 +45,11 @@ function App() {
   };
 
   useEffect(() => {
+    console.log("AOS initialized");
+
     AOS.init({
-      duration: 800,
-      easing: 'ease-in-sine',
+      duration: 500,
+      easing: "ease-in-sine",
       delay: 100,
       offset: 100,
     });
@@ -57,7 +59,6 @@ function App() {
   return (
     <div className="bg-white dark:bg-gray-800 dark:text-white duration-300">
 
-      <Navbar />
       <Hero />
       <Category />
       <Category2 />
@@ -68,9 +69,58 @@ function App() {
       <Banner data={data2} />
       <BlogCard />
       <LogoStrip />
-      <Footer />
     </div>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import Spline from "@splinetool/react-spline";
+
+// function Watch() {
+//   return (
+//     <>
+//         <div className="min-w-screen h-screen bg-black relative">
+//           {" Blue watch "}
+//           {/* <Spline scene="https://prod.spline.design/MQK8Y9UKTZzfRveo/scene.splinecode" /> */}
+//           {/* black watch */}
+//           {/* <Spline scene="https://prod.spline.design/Pt0CIaQihsnff2UN/scene.splinecode" /> */}
+//           {/* Headphones */}
+//           <Spline scene="https://prod.spline.design/pJ4WLivBuDruy4FJ/scene.splinecode" />
+
+
+//           {/* <div className="text-7xl font-bold uppercase text-red-700 absolute top-1/3">
+//           #1 Product of the m       onth
+//         </div> */}
+
+//         </div>
+//       <div className="flex items-center min-h-screen">
+//       </div>
+//         <div className="text-7xl font-bold uppercase text-red-700">
+//           #1 Product of the month
+//         </div>
+//     </>
+//   );
+// }
+
+// export default Watch;
+
+
+
+
+
+
+
+
+
+
+

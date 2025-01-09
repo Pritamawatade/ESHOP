@@ -11,24 +11,26 @@ const LogoStrip = () => {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-800 py-8">
-    <div className="container mx-auto flex justify-between items-center space-x-4 px-4 md:px-12 lg:px-20">
-      {logos.map((logo) => (
-        <div
-          key={logo.id}
-          className="flex flex-col items-center text-center"
-        >
-          <img
-            src={logo.src}
-            alt={logo.name}
-            className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain dark:invert-1"
-          />
-          <p className="mt-2 text-sm sm:text-base text-gray-600 dark:text-gray-300">
-            {logo.name}
-          </p>
-        </div>
-      ))}
+      
+      <div data-aos="zoom-out" className="container mx-auto flex justify-between items-center space-x-4 px-4 md:px-12 lg:px-20">
+        {logos.map((logo) => (
+          <div
+            key={logo.id}
+
+            className="flex flex-col items-center text-center"
+          >
+            <img
+              src={logo.src}
+              alt={logo.name}
+              className="h-10 sm:h-12 md:h-14 lg:h-16 object-contain dark:invert-1"
+            />
+            <p className="mt-2 text-sm sm:text-base text-gray-600 dark:text-gray-300">
+              {logo.name}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
   );
 };
 

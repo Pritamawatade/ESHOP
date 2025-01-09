@@ -2,7 +2,7 @@ import Button from "../Button/Button"
 
 const Product = () => {
     return (
-        <div>
+        <div data-aos="fade-up" data-aos-offset="0" delay="100">
             <div className="wrapper flex flex-col   items-center justify-center">
                 <div className="img-fluid group relative">
                     <img src="https://eshop-tcj.netlify.app/assets/p-1-orOZMLhL.jpg" alt="" className="rounded-md img-fluid w-[250px] h-[250px] object-cover" />

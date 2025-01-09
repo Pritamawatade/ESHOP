@@ -25,7 +25,7 @@ function Darkmode() {
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         src={Lightbutton}
         alt="lightbutton"
-        className={`w-12 cursor-pointer ${
+        className={`w-16 cursor-pointer ${
           theme === "dark" ? "opacity-0 " : "opacity-100 "
         } absolute right-0  z-10 transition-all duration-200`}
       />
@@ -34,7 +34,7 @@ function Darkmode() {
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         src={Darkbutton}
         alt=""
-        className="w-12 cursor-pointer"
+        className="w-16 cursor-pointer"
       />
     </div>
   );

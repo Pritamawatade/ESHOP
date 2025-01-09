@@ -9,6 +9,7 @@ const BlogCard = () => {
       author: "Dilshad",
       title: "How to choose perfect smartwatch",
       description: "Learn the key factors to consider when choosing a smartwatch that suits your needs.",
+      delay: 100,
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const BlogCard = () => {
       author: "Satya",
       title: "How to choose perfect gadget",
       description: "Explore tips and tricks for picking the perfect gadgets for your lifestyle.",
+      delay: 200,
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ const BlogCard = () => {
       author: "Sabir",
       title: "How to choose perfect VR headset",
       description: "Find out what to look for in a VR headset for an immersive experience.",
+      delay: 300,
     },
   ];
 
@@ -36,6 +39,10 @@ const BlogCard = () => {
           {blogs.map((blog) => (
             <div
               key={blog.id}
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-duration="500"
+              data-aos-delay={blog.delay}
               className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
             >
               <img

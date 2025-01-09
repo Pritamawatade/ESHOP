@@ -13,10 +13,10 @@ const Footer = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores alias cum
             </p>
             <p className="text-sm flex items-center gap-2">
-              Made with <span className="text-red-500 dark:text-red-400">♥</span> by The Coding Journey
+              Made with <span className="text-red-500 dark:text-red-400">♥</span> by Pritam Awatade
             </p>
             <button className="bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 text-white px-4 py-2 rounded-md transition-colors">
-              Visit our YouTube Channel
+              Thanks
             </button>
           </div>
 
@@ -68,15 +68,15 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                Noida, Uttar Pradesh
+                Solapur Maharashtra
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                +91 1234567890
+                +91 9371364561
               </p>
               <div className="flex space-x-4 pt-4">
                 <a href="#" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
-                  <Instagram className="w-6 h-6" />
+                  <Instagram className="w-6 h-6" />   
                 </a>
                 <a href="#" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
                   <Facebook className="w-6 h-6" />
