@@ -30,12 +30,16 @@ function Navbar() {
                   About
                 </li>
              </Link>
+             <Link to="/contact">
               <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
                 Contact
               </li>
+             </Link>
+             <Link to="/login">
               <li className="inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200">
-                Cart
+                sign in
               </li>
+             </Link>
 
               {/* dropdown */}
               <li className="relative group cursor-pointer">

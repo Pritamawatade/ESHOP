@@ -25,42 +25,21 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Important Links</h3>
             <ul className="space-y-2">
               <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">
+                <a href="/" className="flex items-center gap-2">
                   <Home className="w-4 h-4" /> Home
                 </a>
               </li>
               <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">About</a>
+                <a href="/about" className="flex items-center gap-2">About</a>
               </li>
               <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">Contact</a>
+                <a href="/contact" className="flex items-center gap-2">Contact</a>
               </li>
-              <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">Blog</a>
-              </li>
+              
             </ul>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
-            <ul className="space-y-2">
-              <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" /> Home
-                </a>
-              </li>
-              <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">About</a>
-              </li>
-              <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">Contact</a>
-              </li>
-              <li className="hover:text-red-500 dark:hover:text-red-400 transition-colors cursor-pointer">
-                <a href="#" className="flex items-center gap-2">Blog</a>
-              </li>
-            </ul>
-          </div>
+        
 
           {/* Address Section */}
           <div className="space-y-4">
