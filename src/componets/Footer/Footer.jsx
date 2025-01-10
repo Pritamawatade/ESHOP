@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Linkedin, Home, Phone, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Home, Phone, MapPin, Twitter, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -54,13 +54,13 @@ const Footer = () => {
                 +91 9371364561
               </p>
               <div className="flex space-x-4 pt-4">
-                <a href="#" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
-                  <Instagram className="w-6 h-6" />   
+                <a href="https://x.com/Pritam_Awatade" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                  <Twitter className="w-6 h-6" />   
                 </a>
-                <a href="#" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
-                  <Facebook className="w-6 h-6" />
+                <a href="https://github.com/Pritamawatade" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                  <Github className="w-6 h-6" />
                 </a>
-                <a href="#" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
+                <a href="https://www.linkedin.com/in/pritam-awatade/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3BU%2FSajCd7R92KeNsk1wbGHw%3D%3D" className="hover:text-red-500 dark:hover:text-red-400 transition-colors">
                   <Linkedin className="w-6 h-6" />
                 </a>
               </div>
