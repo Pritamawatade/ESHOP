@@ -14,7 +14,7 @@ const Banner = ({data}) =>{
                     </div>
                     
                     <div 
-                    data-aos="zoom-in"
+                    data-aos="fade-up"
                     data-aos-offset="200"
 
                     className="h-full flex items-center justify-center">
